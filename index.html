@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/bcdeeb730c.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100">
+    <header>
+        <nav class="h-[10vh] w-full border-b flex justify-between items-center bg-white text-black px-10">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-bold">G</h1>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="#" class="text-lg hover:text-blue-500">Home</a>
+                <a href="#" class="text-lg hover:text-blue-500">Services</a>
+                <a href="#" class="text-lg hover:text-blue-500">About</a>
+                <a href="#" class="text-lg hover:text-blue-500">Contact</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span><i class="fa-solid fa-user text-xl"></i></span>
+                <span><i class="fa-solid fa-gear text-xl"></i></span>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="flex flex-col items-center justify-center h-[50vh]">
+        <h1 class="text-5xl font-light text-gray-800 mb-8">Google</h1>
+        <div class="flex">
+            <input class="p-3 bg-white border border-gray-300 rounded-l-md outline-none w-96" placeholder="Search..." type="text" id="userSearch">
+            <button id="searchBtn" class="bg-blue-500 text-white p-3 rounded-r-md hover:bg-blue-600"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </main>
+    
+    <section class="flex justify-center mt-10">
+        <div id="img">
+
+        </div>
+        <div id="result" class="w-full max-w-screen-lg p-5">
+            <!-- Search results will go here -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
